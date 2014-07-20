@@ -1,0 +1,9 @@
+<div ng-repeat="camera in cameras">
+    <div class="lead">{{$index + 1}}. {{camera.properties.description}}</div>
+    <video id="my_video_1" autoplay class="video-js vjs-default-skin" controls
+           preload="auto" width="640" height="264" data-setup='{ "techOrder": ["flash"] }'>
+        <source src="{{camera.properties.rtmp_url}}" type='rtmp/mp4'>
+    </video>
+</div>
+
+
